@@ -1,0 +1,125 @@
+header.header
+  .container
+    a.header__logo href="#"
+      img.header__logo-image src="assets/logo.svg"
+
+    input.toggle_menu type="checkbox" id="toggle_menu"
+    nav.nav
+      ul.header__menu
+        li.header__menu-item
+          a.header__menu-item--link href="javascript:void(0)" products
+          .submenu.submenu--moved
+            .submenu__column.submenu__column--wide
+              a.submenu__link href="#"
+                .submenu__link-title.submenu__link-title--current
+                  | Reward Expert
+                  i.submenu__link-title--image.icon-plane.color_blue
+                .submenu__text.hidden_mobile Service that will help people get miles and points for spending.
+              a.submenu__link href="#"
+                .submenu__link-title
+                  | Data Routes
+                  i.submenu__link-title--image.icon-plane.color_blue-darker
+                .submenu__text.hidden_mobile Service that will help people get the maximum benefit for spending.
+            .submenu__column.submenu__column--wide
+              a.submenu__link href="#"
+                .submenu__link-title
+                  | Direct Routes
+                  i.submenu__link-title--image.icon-plane.color_azure
+                .submenu__text.hidden_mobile Check your tiket’s value. Chose a best deal befor you start your trip.
+              a.submenu__link href="#"
+                .submenu__link-title
+                  | Personal Concierge
+                  i.submenu__link-title--image.icon-bell.color_violet
+                .submenu__text.hidden_mobile Service that will help people to book any tickets for miles and points.
+        li.header__menu-item
+          a.header__menu-item--link href="javascript:void(0)" credit cards
+          .submenu
+            .submenu__column
+              .submenu__link.submenu__link--static
+                a.submenu__link-title.submenu__link-title--active href="#"
+                  | Card Categories
+                  i.submenu__link-title--image.icon-bell.color_orange.hidden_mobile
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Best Credit Cards for You
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Balance Transfer Cards
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Low Intro Rate Cards
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" No Annual Fee Cards
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Instant Decision Cards
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Best Prepaid Cards
+              .submenu__link.submenu__link--static
+                a.submenu__link-title.submenu__link-title--active href="#"
+                  | Reward Cards
+                  i.submenu__link-title--image.icon-bell.color_red.hidden_mobile
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Cash Back Cards
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Airlines Cards
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Gasonline Cards
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#" Hotel Rewards Cards
+            .submenu__column
+              .submenu__link.submenu__link--static
+                a.submenu__link-title.submenu__link-title--active href="#"
+                  | Recommended
+                  span.hidden_mobile  by Experts
+                  i.submenu__link-title--image.icon-bell.color_green.hidden_mobile
+                .submenu__subtitle.hidden_tablet Emporium Black Card
+                img.submenu__image--big.hidden_tablet src="assets/credit-card.png"
+                ul.submenu__list.hidden_tablet
+                  li.submenu__list-item Less than Perfect Credit Accepted. Approval is quick and easy. Must be 18 years or older, have a valid checking account and a verifiable source of income.
+                  li.submenu__list-item No Hidden Fees
+                a.submenu__link--strong.hidden_tablet  href="#" All recommended cards
+            .submenu__column
+              .submenu__link.submenu__link--static
+                a.submenu__link-title.submenu__link-title--active href="#"
+                  | Cards by Issuer
+                  i.submenu__link-title--image.icon-bell.color_blue.hidden_mobile
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#"
+                  img.submenu__link-image src="assets/cards/visa.svg"
+                  | Visa
+                  sup &reg;
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#"
+                  img.submenu__link-image src="assets/cards/mastercard.svg"
+                  | MasterCard
+                  sup &reg;
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#"
+                  img.submenu__link-image src="assets/cards/americanexpress.svg"
+                  | American Express
+                  sup &reg;
+                a.submenu__link.submenu__link--simple.hidden_tablet href="#"
+                  img.submenu__link-image src="assets/cards/discover.svg"
+                  | Discover
+                  sup &reg;
+        li.header__menu-item
+          a.header__menu-item--link href="javascript:void(0)" company
+          .submenu
+            .submenu__column.submenu__column--short
+              a.submenu__link href="#"
+                .submenu__link-title.submenu__link-title--thin
+                  | About Us
+                  i.submenu__link-title--image.icon-user.color_green-dark.hidden_mobile
+              a.submenu__link href="#"
+                .submenu__link-title.submenu__link-title--thin
+                  | Contact Us
+                  i.submenu__link-title--image.icon-email.color_brown.hidden_mobile
+                    span.path1
+                    span.path2
+            .submenu__column.submenu__column--short
+              a.submenu__link href="#"
+                .submenu__link-title.submenu__link-title--thin
+                  | Careers
+                  i.submenu__link-title--image.icon-star.color_violet-dark.hidden_mobile
+              a.submenu__link href="#"
+                .submenu__link-title.submenu__link-title--thin
+                  | Press Resources
+                  i.submenu__link-title--image.icon-download.color_blue-light.hidden_mobile
+        li.header__menu-item.header__menu-item--arrow
+          a.header__menu-item--link href="#"
+            span.visible_tablet read our
+            |  blog
+    label.header__close for="toggle_menu"
+      i.header__close-icon.icon-close
+    label.header__burger for="toggle_menu"
+      i.header__burger-icon.icon-burger
+    .header__sign
+      a.btn.btn-empty href="#" login
+      a.btn.btn-success href="#"
+        i.icon-user_empty
+        |  register
+

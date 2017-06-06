@@ -1,0 +1,101 @@
+html,  body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 14px;
+  color: $grey-dark;
+  font-family: $font-base;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 595px; //minimal necessary height in design
+}
+.container {
+  display: block;
+  width:100%;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0;
+  box-sizing: border-box;
+
+  @include laptop {
+    max-width: 948px;
+  }
+
+  @include tablet {
+    max-width: 100%;
+    margin: 0 24px;
+    padding: 0;
+    width: auto;
+  }
+
+  @include mobile {
+    margin: 0 16px;
+  }
+}
+a {
+  text-decoration: none;
+  color: $blue-dark;
+}
+sup {
+  font-size: 100%;
+  top: 0;
+}
+.hidden_tablet {
+  @include tablet {
+    display: none!important;
+  }
+}
+.hidden_mobile {
+  @include mobile {
+    display: none!important;
+  }
+}
+.visible_tablet {
+  display: none!important;
+
+  @include tablet {
+    display: inline-block!important;
+  }
+}
+.fade-in {
+  @extend %fade-in;
+}
+.fade-out {
+  @extend %fade-out;
+}
+.color_blue {
+  color: $blue;
+}
+.color_blue-darker {
+   color: $blue-darker;
+ }
+.color_azure {
+  color: $azure;
+}
+.color_violet {
+  color: $violet;
+}
+.color_orange {
+  color: $orange;
+}
+.color_red {
+  color: $red;
+}
+.color_green {
+  color: $green;
+}
+.color_violet-dark {
+  color: $violet-dark;
+}
+.color_green-dark {
+  color: $green-dark;
+}
+.color_brown {
+  color: $brown;
+}
+.color_blue-light {
+  color: $blue-light;
+}

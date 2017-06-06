@@ -1,0 +1,11 @@
+/*
+I believe that the background on the homepage page is a unique style.
+So makes sense to put it in a separate file for the unique styles of the main page.
+*/
+
+.homepage {
+  background-color: #25a3e7; // Old browsers
+  background: linear-gradient(to bottom, #25a3e7 0%,#0b79c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25a3e7', endColorstr='#0b79c1',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+}

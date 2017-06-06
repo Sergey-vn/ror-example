@@ -1,0 +1,50 @@
+// Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Media mixin's
+@mixin laptop () {
+  @media (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin tablet () {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin mobile () {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+//fix issue with @extend inside @media
+@mixin fade-in {
+    transition: opacity 0.3s ease-in!important;
+    opacity: 1!important;
+    visibility: visible!important;
+    z-index: 999;
+}
+@mixin fade-out {
+  transition: visibility 0.3s, z-index 0.3s, opacity 0.3s ease-out!important;
+  opacity: 0!important;
+  visibility: hidden!important;
+  z-index: -999;
+}
+%fade-in {
+  @include fade-in;
+}
+%fade-out {
+  @include fade-out;
+}

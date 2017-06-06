@@ -1,0 +1,29 @@
+/*---- FONTS ----*/
+$font-base              :     'Source Sans Pro', sans-serif;
+$font-icons             :     'iconfont';
+
+/*---- COLORS ----*/
+$black                  :     #36364d;
+$grey                   :     #8d95a6;
+$grey-dark              :     #626773;
+$blue-lighter           :     #e6f7ff;
+$blue-light             :     #00bcd4;
+$blue                   :     #3498db;
+$blue-dark              :     #0091d9;
+$blue-darker            :     #34495e;
+$orange                 :     #f39c12;
+$green                  :     #2ecc71;
+$green-light            :     #00d34d;
+$green-lighten          :     lighten($green-light, 3%);
+$green-dark             :     #31bb63;
+$red                    :     #e74c3c;
+$violet                 :     #9b59b6;
+$violet-dark            :     #673ab7;
+$azure                  :     #1abc9c;
+$brown                  :     #795548;
+$border-color           :     rgba(141,149,166,0.2);
+
+/*---- EFFECTS ----*/
+$transition-fast		    : 		0.3s ease-out 0s;
+$transition-base		    : 		0.5s ease-out 0s;
+$transition-slow		    : 		0.75s ease-out 0s;
